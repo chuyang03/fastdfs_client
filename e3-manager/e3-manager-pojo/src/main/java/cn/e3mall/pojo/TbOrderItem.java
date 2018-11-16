@@ -1,5 +1,7 @@
 package cn.e3mall.pojo;
 
+import java.io.Serializable;
+
 /**
  * 
  * 
@@ -7,7 +9,7 @@ package cn.e3mall.pojo;
  * 
  * @date 2018-10-30
  */
-public class TbOrderItem {
+public class TbOrderItem implements Serializable {
     private String id;
 
     /**

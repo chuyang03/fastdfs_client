@@ -1,5 +1,6 @@
 package cn.e3mall.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -9,7 +10,7 @@ import java.util.Date;
  * 
  * @date 2018-10-30
  */
-public class TbContent {
+public class TbContent implements Serializable {
     private Long id;
 
     /**
