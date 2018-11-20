@@ -1,7 +1,10 @@
 package cn.e3mall.fast;
 
+import cn.e3mall.utills.FastDFSClient;
 import org.csource.fastdfs.*;
 import org.junit.Test;
+
+//路径需要看实际情况更改，为文件的全路径地址
 
 public class FastDFSTest {
 
@@ -25,5 +28,13 @@ public class FastDFSTest {
             System.out.println(string);
         }
     }
+
+    @Test
+    public void testFastDfsClient() throws Exception {
+        FastDFSClient fastDFSClient = new FastDFSClient("D:/workspaces-itcast/e3-manager-web/src/main/resources/resource/client.conf");
+        String file = fastDFSClient.uploadFile("D:/Documents/Pictures/images/2f2eb938943d.jpg");
+        System.out.println(file);
+    }
+
 
 }
